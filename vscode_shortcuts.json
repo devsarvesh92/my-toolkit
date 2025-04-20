@@ -520,25 +520,30 @@
         "when": "textInputFocus"
     },
     {
+        "key": "shift+alt+left",
+        "command": "cursorWordStartLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
         "key": "alt+left",
         "command": "cursorWordLeft",
         "when": "textInputFocus"
     },
-    {
-        "key": "shift+alt+left",
-        "command": "cursorWordLeftSelect",
-        "when": "textInputFocus"
-    },
+    // {
+    //     "key": "shift+alt+left",
+    //     "command": "cursorWordLeftSelect",
+    //     "when": "textInputFocus"
+    // },
     {
         "key": "ctrl+alt+left",
         "command": "cursorWordPartLeft",
         "when": "textInputFocus"
     },
-    {
-        "key": "ctrl+shift+alt+left",
-        "command": "cursorWordPartLeftSelect",
-        "when": "textInputFocus"
-    },
+    // {
+    //     "key": "shift+alt+left",
+    //     "command": "cursorWordPartLeftSelect",
+    //     "when": "textInputFocus"
+    // },
     {
         "key": "ctrl+alt+right",
         "command": "cursorWordPartRight",
@@ -1075,7 +1080,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+right",
+        "key": "shift+alt+right",
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
@@ -6153,11 +6158,11 @@
         "command": "gitlens.diffWithPreviousInDiffLeft",
         "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:tracked'"
     },
-    {
-        "key": "shift+alt+left",
-        "command": "cursorColumnSelectLeft",
-        "when": "editorTextFocus"
-    },
+    // {
+    //     "key": "shift+alt+left",
+    //     "command": "cursorColumnSelectLeft",
+    //     "when": "editorTextFocus"
+    // },
     {
         "key": "alt+cmd+g ctrl+alt+p",
         "command": "gitlens.diffWithPreviousInDiffLeft",
@@ -6267,7 +6272,7 @@
         "when": "editorTextFocus && gitlens:enabled && isInDiffRightEditor && config.gitlens.keymap == 'chorded' && resourceScheme =~ /^(gitlens|git|pr)$/"
     },
     {
-        "key": "ctrl+shift+right",
+        "key": "shift+alt+right",
         "command": "cursorWordStartRightSelect",
         "when": "editorTextFocus"
     },
@@ -6312,7 +6317,7 @@
         "when": "editorTextFocus && hasWordHighlights"
     },
     {
-        "key": "ctrl+shift+g",
+        "key": "cmd+shift+g",
         "command": "workbench.view.scm",
         "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
     },
