@@ -117,3 +117,9 @@ else
     echo "Claude is already installed"
 fi
 
+if ! command -v k9s &> /dev/null; then
+    echo "Installing k9s..."
+    brew install k9s
+else
+    echo "k9s is already installed"
+fi
